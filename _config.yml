@@ -8,14 +8,12 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Self Study                          # the main title
+title: YunzaiDev                          # the main title
 
 tagline: Endless Learning  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  Endless Learning
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://yunzai.dev'
