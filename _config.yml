@@ -19,6 +19,7 @@ description: >-                        # used by seo meta and the atom feed
 url: 'https://yunzai.dev'
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
 
 author: Yun-Jae Na                  # change to your full name
 
