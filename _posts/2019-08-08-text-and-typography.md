@@ -1,7 +1,7 @@
 ---
 title: Text and Typography
 author: Cotes Chung
-date: 2019-08-08 11:33:00 +0800
+date: 2020-10-13 01:33:00 +0900
 categories: [Blogging, Demo]
 tags: [typography]
 math: true
