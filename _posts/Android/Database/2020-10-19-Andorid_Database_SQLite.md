@@ -58,6 +58,7 @@ private const val SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS ${FeedEntry.TABLE_N
 
 **SQLiteOpenHelper** 를 사용하면 **onCreate()** 및 **onUpgrade()** 콜백 메서드를 재정의하는 서브클래스를 생성해야 한다. 또한 onDowngrade() 또는 onOpen() 메서드를 구현할 수 있지만 이러한 메서드는 필수는 아니다.
 
+
 ```kotlin
 // SQLiteHelper 구현 예시
 class FeedReaderDbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
