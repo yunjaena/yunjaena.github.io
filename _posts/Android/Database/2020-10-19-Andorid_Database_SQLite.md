@@ -21,7 +21,7 @@ SQL database의 기본 원칙 중 하나는 **schema** 이다. **schema**는 dat
 
 **Contract class**를 구성하는 좋은 방법은 클래스의 루트 수주에 있는 database 전체에 전역적인 정의를 추가하는 것이며 다음 각 테이블의 내부 클래스를 생성한다. 각 내부 클래스는 상응하는 테이블의 열을 열거한다.
 
-> [BaseColums](https://developer.android.com/reference/android/provider/BaseColumns) 인터페이스를 구현함으로써 **_ID**라고 하는 기본 키 필드를 상속할 수 있으며 CusorAdapter와 같은 일부 Android 클래스는 내부 클래스가 이러한 기본 키 필드를 가지고 있을 것이라 예상한다. 기본 키 필드가 반드시 필요한 것은 아니지만 database가 Android 프레임워크와 조화롭게 작동하는데 도움이 된다.
+>[BaseColums](https://developer.android.com/reference/android/provider/BaseColumns) 인터페이스를 구현함으로써 **_ID**라고 하는 기본 키 필드를 상속할 수 있으며 CusorAdapter와 같은 일부 Android 클래스는 내부 클래스가 이러한 기본 키 필드를 가지고 있을 것이라 예상한다. 기본 키 필드가 반드시 필요한 것은 아니지만 database가 Android 프레임워크와 조화롭게 작동하는데 도움이 된다.
 
 아래의 코드는 Android Developer 페이지에 있는 코드이다. 다음 Contract 는 테이블 이름과 RSS 피드를 나타내는 단일 테이블의 열 이름을 정의한다.
 
@@ -54,7 +54,7 @@ private const val SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS ${FeedEntry.TABLE_N
 
 **[SQLiteOpenHepler](https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper)** 클래스에는 database 관리를 위한 API 세트가 포함이되어 있다. 이 클래스를 사용하여 database의 참조를 가져오면 시스템은 앱이 시작되고 있는 동안이 아닌 필요한 때에만 database 생성 및 업데이트와 같이 장시간 실행될 수 있는 작업을 실행한다. 개발자는 **getWritableDatabase()** 또는 **getReadableDatabase()**를 호출하기만 하면 된다.
 
-> **getWritableDatabase()** 또는 **getReadableDatabase()** 는 장시간 실행될 수 있기 떄문에 백그라운드 스레드에서 호출해야 한다.
+>**getWritableDatabase()** 또는 **getReadableDatabase()** 는 장시간 실행될 수 있기 떄문에 백그라운드 스레드에서 호출해야 한다.
 
 **SQLiteOpenHelper** 를 사용하면 **onCreate()** 및 **onUpgrade()** 콜백 메서드를 재정의하는 서브클래스를 생성해야 한다. 또한 onDowngrade() 또는 onOpen() 메서드를 구현할 수 있지만 이러한 메서드는 필수는 아니다.
 
