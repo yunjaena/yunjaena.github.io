@@ -52,9 +52,9 @@ private const val SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS ${FeedEntry.TABLE_N
 
 기기의 내부 저장소에 저장한 파일과 마찬가지로 **Android는 database를 앱의 비공개 폴더에 저장한다.** 기본적으로 이 공간은 다른 앱이나 사용자가 액세스할 수 없기 때문에 저장된 데이터는 안전하게 유지된다.
 
-**[SQLiteOpenHelper](https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper)** 클래스에는 database 관리를 위한 API 세트가 포함이되어 있다. 이 클래스를 사용하여 database의 참조를 가져오면 시스템은 앱이 시작되고 있는 동안이 아닌 필요한 때에만 database 생성 및 업데이트와 같이 장시간 실행될 수 있는 작업을 실행한다. 개발자는 **getWritableDatabase()** 또는 **getReadableDatabase()** 를 호출하기만 하면 된다.
+이 클래스를 사용하여 database의 참조를 가져오면 시스템은 앱이 시작되고 있는 동안이 아닌 필요한 때에만 database 생성 및 업데이트와 같이 장시간 실행될 수 있는 작업을 실행한다. 개발자는 **getWritableDatabase()** 또는 **getReadableDatabase()** 를 호출하기만 하면 된다.
 
-> **getWritableDatabase()** 또는 **getReadableDatabase()** 는 장시간 실행될 수 있기 떄문에 백그라운드 스레드에서 호출해야 한다.
+>**getWritableDatabase()** 또는 **getReadableDatabase()** 는 장시간 실행될 수 있기 떄문에 백그라운드 스레드에서 호출해야 한다.
 
 **SQLiteOpenHelper** 를 사용하면 **onCreate()** 및 **onUpgrade()** 콜백 메서드를 재정의하는 서브클래스를 생성해야 한다. 또한 onDowngrade() 또는 onOpen() 메서드를 구현할 수 있지만 이러한 메서드는 필수는 아니다.
 
