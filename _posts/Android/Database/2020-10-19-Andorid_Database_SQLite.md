@@ -50,7 +50,7 @@ private const val SQL_CREATE_ENTRIES =
 private const val SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS ${FeedEntry.TABLE_NAME}"
 ```
 
-기기의 내부 저장소에 저장한 파일과 마찬가지로 **Android는 database를 앱의 비공개 폴더에 저장한다.** 기본적으로 이 공간은 다른 앱이나 사용자가 액세스할 수 없기 떄문에 저장된 데이터는 안전하게 유지된다.
+기기의 내부 저장소에 저장한 파일과 마찬가지로 **Android는 database를 앱의 비공개 폴더에 저장한다.** 기본적으로 이 공간은 다른 앱이나 사용자가 액세스할 수 없기 때문에 저장된 데이터는 안전하게 유지된다.
 
 **[SQLiteOpenHepler](https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper)** 클래스에는 database 관리를 위한 API 세트가 포함이되어 있다. 이 클래스를 사용하여 database의 참조를 가져오면 시스템은 앱이 시작되고 있는 동안이 아닌 필요한 때에만 database 생성 및 업데이트와 같이 장시간 실행될 수 있는 작업을 실행한다. 개발자는 **getWritableDatabase()** 또는 **getReadableDatabase()**를 호출하기만 하면 된다.
 
