@@ -11,7 +11,7 @@ image : https://drive.google.com/uc?export=view&id=1EKGE5Tbptu_0S3-y3Pazr-1vSTtf
 
 - JDK 설치  (1.8 이상의 JDK가 설치 되어 있다고 가정함)
 - IDE 다운로드 및 설치
-- IDE에 프로젝트 생성
+- IDE에 프로젝트 생
 - RxJava를 위한 의존 라이브러리 설치
 - 정상적으로 동작하는지 Hello RxJava 코드 작성 및 실행
 
@@ -43,13 +43,13 @@ compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.6'
 ```java
 import io.reactivex.Observable;
 
-  public class HelloRxJava {
+public class HelloRxJava {
 
     public static void main(String[] args){
         Observable<String> observable = Observable.just("hello", "RxJava"); // 데이터를 생성하고 통제하는 생성자쪽 코드.
         observable.subscribe(data -> System.out.println(data)); // 데이터를 구독하는 소비자쪽 코드.
     }
-
+    
 }
 /* 출력
 hello
