@@ -1,7 +1,7 @@
 ---
 title: RxJava - 테스트(1)
 author: Yun-Jae Na
-date: 2020-01-01 16:40:00 +0930
+date: 2021-01-01 16:40:00 +0930
 categories: [Android, RxJava]
 tags: [Android, RxJava]
 image : https://drive.google.com/uc?export=view&id=1EKGE5Tbptu_0S3-y3Pazr-1vSTtfNy1K
@@ -36,7 +36,7 @@ public class UnitTestNotByRxJava {
 /*
 Expected: is <5>
      but: was <0>
-java.lang.AssertionError: 
+java.lang.AssertionError:
 */
 ```
 
