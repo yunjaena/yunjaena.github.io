@@ -221,7 +221,7 @@ public class AssertErrorTest extends RxJavaTest {
 }
 ```
 
-### assertComplete
+### assertComplete
 
 - 해당 시점까지 완료 통지가 있으면 테스트에 성공한다.
 
