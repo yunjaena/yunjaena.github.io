@@ -7,7 +7,7 @@ tags: [Android, Slack]
 image: https://drive.google.com/uc?export=view&id=1Sf11rU-CDmQo1BF92Fq-8ZKFzWi1YJXI
 ---
 
-Android 앱에서 크리티컬한 이슈가 발생하였을때(ex) 인앱 결제 실패, OAuth 로그인 실패 등..) 빠른 대응을 하고 싶은 경우가 생겨서 슬랙으로 메시지를 보내는 방법을 생각하게 되었다.
+Android 앱에서 크리티컬한 이슈가 발생하였을때(ex) 인앱 결제 실패, SNS 로그인 실패 등..) 빠른 대응을 하고 싶은 경우가 생겨서 슬랙으로 메시지를 보내는 방법을 생각하게 되었다.
 
 
 ## 사용 라이브러리
@@ -101,7 +101,7 @@ dependencies {
 
 ### Android Manifest
 
-- AndroidManifest.xml에 meta data로 웹후크 URL에서 "https://hooks.slack.com" 를 제외한 나머지 path를 복사해주세요. (string resource에 선언하시는걸 추천합니다.)
+- AndroidManifest.xml에 meta data로 웹후크 URL에서 "https://hooks.slack.com/" 를 제외한 나머지 path를 복사해주세요. (string resource에 선언하시는걸 추천합니다.)
 
 ```xml
 <meta-data
