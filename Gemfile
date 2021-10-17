@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy"
 gem "jekyll", ">=3.8.6"
 gem 'jekyll-sitemap'
 gem 'jekyll-feed'
