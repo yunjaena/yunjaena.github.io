@@ -1,7 +1,7 @@
 ---
 title: Android Fragment
 author: Yun-Jae Na
-date: 2021-11-15 12:54:00 +0900
+date: 2021-11-15 00:54:00 +0900
 categories: [Android, Basic]
 tags: [Android, Fragment]
 ---
